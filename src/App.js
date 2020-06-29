@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { Parallax } from "react-parallax";
+
+import paraImg from "./photos/prague.jpg"
 
 export default function App() {
+
   return (
-    <div className="App">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-    </div>
+    <Parallax bgImage={paraImg}>
+
+    </Parallax>
   );
 };
