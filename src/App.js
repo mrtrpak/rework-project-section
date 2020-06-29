@@ -6,8 +6,12 @@ import PlayerLinks from "./PlayerLinks";
 
 export default function App() {
 
+  const [handheld, updHandheld] = useState(false);
+  const [height, setHt] = useState(650);
+  const [strength, setStr] = useState(300);
+
   return (
-    <Parallax bgImage={paraImg}>
+    <Parallax bgImage={paraImg} strength={strength} style={{ height: height }}>
       <PlayerLinks />
     </Parallax>
   );
