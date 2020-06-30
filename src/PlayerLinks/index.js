@@ -8,6 +8,8 @@ import businessGif from "../gifs/business.gif";
 import retroGif from "../gifs/retroGame.gif";
 import switchGif from "../gifs/switchGif.gif";
 
+import "./style.css";
+
 export default function PlayerLinks() {
 
   const [projTitle, updTitle] = useState("Portfolio");
