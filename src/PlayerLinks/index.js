@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Grid, Link, IconButton, Paper } from "@material-ui/core";
 import TheatersIcon from "@material-ui/icons/Theaters";
 import GithubIcon from "@material-ui/icons/GitHub";
@@ -6,7 +6,7 @@ import GithubIcon from "@material-ui/icons/GitHub";
 import budgetGif from "../gifs/budget.gif";
 import businessGif from "../gifs/business.gif";
 import retroGif from "../gifs/retroGame.gif";
-import switchGif from "../gifs/switchGifs.gif";
+import switchGif from "../gifs/switchGif.gif";
 
 export default function PlayerLinks() {
 
@@ -41,8 +41,80 @@ export default function PlayerLinks() {
   };
 
   return (
-    <div>
-
-    </div>
+    <Grid container alignItems="center" justify="space-evenly" spacing={3}>
+    <Grid item xs={5} component={Paper}>
+      <img src={source} alt="loading..." className="player" />
+    </Grid>
+    <Grid container item xs={5} alignItems="center" justify="center" component={Paper}>
+      <Grid item xs={2} lg={1}>
+        <IconButton onClick={() => { handleClick("1") }} aria-label="card-gif" color="inherit">
+          <TheatersIcon />
+        </IconButton>
+      </Grid>
+      <Grid item xs={8} lg={10}>
+        <Link style={{ textDecoration: "none" }} color="primary" href="https://stormy-harbor-93453.herokuapp.com/">
+        <h3 className="linkText">Business Card Creator</h3>
+        </Link>
+      </Grid> 
+      <Grid item xs={2} lg={1}>
+        <IconButton aria-label="card-github" color="inherit">
+          <a href="https://github.com/mrtrpak/Futurum-est-nostrum">
+            <GithubIcon />
+          </a>
+        </IconButton>
+      </Grid>
+      <Grid item xs={2} lg={1}>
+        <IconButton onClick={() => { handleClick("2") }} aria-label="game-gif" color="inherit">
+          <TheatersIcon />
+        </IconButton>
+      </Grid>
+      <Grid item xs={8} lg={10}>
+        <Link style={{ textDecoration: "none" }} color="primary" href="https://immense-hamlet-97451.herokuapp.com/">
+          <h3 className="linkText">Full-stack Retro Game</h3>
+        </Link>
+      </Grid> 
+      <Grid item xs={2} lg={1}>
+        <IconButton aria-label="game-github" color="inherit">
+          <a href="https://github.com/mrtrpak/ProjectTwoTheGame">
+            <GithubIcon />
+          </a>
+        </IconButton>
+      </Grid>
+      <Grid item xs={2} lg={1}>
+        <IconButton onClick={() => { handleClick("3") }} aria-label="budget-gif" color="inherit">
+          <TheatersIcon />
+        </IconButton>
+      </Grid>
+      <Grid item xs={8} lg={10}>
+        <Link style={{ textDecoration: "none" }} color="primary" href="https://still-ravine-53114.herokuapp.com/">
+          <h3 className="linkText">Budget Tracker</h3>
+        </Link>
+      </Grid> 
+      <Grid item xs={2} lg={1}>
+        <IconButton aria-label="budget-github" color="inherit">
+          <a href="https://github.com/mrtrpak/Budget-Tracker">
+            <GithubIcon />
+          </a>
+        </IconButton>
+      </Grid>
+      <Grid item xs={6}>
+        <h5 id="projectText">
+          Click film icon to view Gif
+          <br></br>
+          Click on text to go to the project
+          <br></br>
+          Click on Github icon to go to repo
+        </h5>
+      </Grid>
+      <Grid container item justify="center" xs={6}>
+        <h3>
+          {projTitle} Tools Used:
+        </h3>
+        <h3 id="toolsText">
+        axios, github-pages, material-ui, react, react-card-flip, react-parallax
+        </h3>
+      </Grid>
+    </Grid>
+  </Grid>
   );
 };
