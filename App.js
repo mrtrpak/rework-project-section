@@ -4,6 +4,8 @@ import { Parallax } from "react-parallax";
 import paraImg from "./photos/prague.jpg";
 import PlayerLinks from "./PlayerLinks";
 
+import "./App.css";
+
 export default function App() {
 
   // const [handheld, updHandheld] = useState(false);
