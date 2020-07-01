@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Grid, Link, IconButton, Paper } from "@material-ui/core";
 import TheatersIcon from "@material-ui/icons/Theaters";
 import GithubIcon from "@material-ui/icons/GitHub";
@@ -12,8 +12,12 @@ import "./style.css";
 
 export default function PlayerLinks() {
 
+  const [direction, updDir] = useState("row");
   const [projTitle, updTitle] = useState("Portfolio");
   const [source, updSrc] = useState(switchGif);
+
+  const chkWindow = (window.innerWidth <= 960) ?
+    updDir("column") : updDir("row"); 
 
   const handleClick = id => {
     switch (id) {
@@ -42,8 +46,12 @@ export default function PlayerLinks() {
     };
   };
 
+  useEffect(() => {
+    chkWindow();
+  });
+
   return (
-    <Grid container alignItems="center" justify="space-evenly" spacing={3}>
+    <Grid container alignItems="center" direction={direction} justify="space-evenly" spacing={3}>
     <Grid item xs={5} component={Paper}>
       <img src={source} alt="loading..." className="player" />
     </Grid>
