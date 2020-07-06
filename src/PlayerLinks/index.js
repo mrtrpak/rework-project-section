@@ -16,8 +16,10 @@ export default function PlayerLinks() {
   const [projTitle, updTitle] = useState("Portfolio");
   const [source, updSrc] = useState(switchGif);
 
-  const chkWindow = (window.innerWidth <= 960) ?
+  function chkWindow() {
+    (window.innerWidth <= 960) ?
     updDir("column") : updDir("row"); 
+  }; 
 
   const handleClick = id => {
     switch (id) {
@@ -47,8 +49,12 @@ export default function PlayerLinks() {
   };
 
   useEffect(() => {
-    chkWindow();
-  });
+    function handleLayout() {
+      chkWindow()
+    }
+    window.addEventListener("resize", handleLayout);
+    return () => window.removeEventListener("resize", handleLayout);
+  }, []);
 
   return (
     <Grid container alignItems="center" direction={direction} justify="space-evenly" spacing={3}>
