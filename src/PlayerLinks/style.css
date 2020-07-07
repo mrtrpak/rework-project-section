@@ -1,3 +1,8 @@
+.player {
+  height: 300px;
+  width: 400px;
+}
+
 .linkText, #projectText, #toolsText {
   text-align: center;
 }

@@ -113,19 +113,19 @@ export default function PlayerLinks() {
           </a>
         </IconButton>
       </Grid>
-      <Grid item xs={6}>
-        <h5 id="projectText">
+      <Grid item xs={5}>
+        <h6 id="projectText">
           Click film icon to view Gif
           <br></br>
           Click on text to go to the project
           <br></br>
           Click on Github icon to go to repo
-        </h5>
+        </h6>
       </Grid>
-      <Grid container item justify="center" xs={6}>
-        <h3>
+      <Grid container item justify="center" xs={5}>
+        <h4>
           {projTitle} Tools Used:
-        </h3>
+        </h4>
         <h3 id="toolsText">
         axios, github-pages, material-ui, react, react-card-flip, react-parallax
         </h3>
