@@ -44,11 +44,7 @@
 }
 
 @media only screen and (max-width: 959px) {
-  .gridItem {
-    margin: 50px 0;
-  }
-
-  .toolsTitle {
-    color: aqua;
+  .padding {
+    padding: 50px 0;
   }
 }

@@ -62,6 +62,7 @@ export default function PlayerLinks() {
     <Grid item xs={10} md={5} component={Paper} className="gridItem">
       <img src={source} alt="loading..." className="player" />
     </Grid>
+    <div className="padding"></div>
     <Grid container item xs={10} md={5} alignItems="center" justify="center" component={Paper} className="gridItem">
       <Grid item xs={2} lg={1}>
         <IconButton onClick={() => { handleClick("1") }} aria-label="card-gif" color="inherit">
