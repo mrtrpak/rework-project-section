@@ -107,7 +107,7 @@ export default function PlayerLinks() {
         </Link>
       </Grid> 
       <Grid item xs={2} lg={1}>
-        <IconButton aria-label="budget-github" color="inherit">
+        <IconButton aria-label="budget-github" color="primary" className="color">
           <a href="https://github.com/mrtrpak/Budget-Tracker">
             <GithubIcon />
           </a>
