@@ -1,6 +1,5 @@
-.playGrid {
-  height: 300px;
-  width: 400px;
+.gridItem {
+  height: 400px;
 }
 
 .player {

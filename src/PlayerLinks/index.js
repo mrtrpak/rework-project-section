@@ -58,10 +58,10 @@ export default function PlayerLinks() {
 
   return (
     <Grid container alignItems="center" direction={direction} justify="space-evenly" spacing={3}>
-    <Grid item xs={5} component={Paper} className="playGrid">
+    <Grid item xs={5} component={Paper} className="gridItem">
       <img src={source} alt="loading..." className="player" />
     </Grid>
-    <Grid container item xs={5} alignItems="center" justify="center" component={Paper}>
+    <Grid container item xs={5} alignItems="center" justify="center" component={Paper} className="gridItem">
       <Grid item xs={2} lg={1}>
         <IconButton onClick={() => { handleClick("1") }} aria-label="card-gif" color="inherit">
           <TheatersIcon />
@@ -117,9 +117,9 @@ export default function PlayerLinks() {
         <p id="projectText">
           Click film icon to view Gif
           <br></br>
-          Click on text to go to the project
+          Project name goes to link
           <br></br>
-          Click on Github icon to go to repo
+          Github icon goes to repo
         </p>
       </Grid>
       <Grid container item justify="center" xs={6}>
