@@ -25,9 +25,15 @@
   font-size: 16px;
 }
 
-@media only screen and (min-width: 960) and (max-width: 1100px) {
+@media only screen and (min-width: 960px) and (max-width: 1100px) {
+
   #projectText, #toolsText {
     font-weight: 600;
     font-size: 12px;
   }
+
+  #toolsTitle {
+    font-size: 20px;
+  }
+  
 }
