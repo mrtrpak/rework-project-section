@@ -38,7 +38,7 @@ export default function App() {
   
 
   return (
-    <Parallax bgImage={paraImg} strength={strength} style={{ height: height }}>
+    <Parallax bgImage={paraImg} strength={strength} style={{ height: height, padding: "250px 0" }} className="playLinkGrid">
       <PlayerLinks />
     </Parallax>
   );
