@@ -25,3 +25,10 @@
   font-weight: 650;
   font-size: 16px;
 }
+
+@media only screen and (max-width: 1100px) {
+  #projectText, #toolsText {
+    font-weight: 600;
+    font-size: 12px;
+  }
+}
