@@ -16,10 +16,9 @@ export default function PlayerLinks() {
   const [projTitle, updTitle] = useState("Portfolio");
   const [source, updSrc] = useState(switchGif);
 
-  function chkWindow() {
-    (window.innerWidth <= 960) ?
-    updDir("column") : updDir("row"); 
-  }; 
+  const chkWindow = () => {
+    (window.innerWidth < 960) ? updDir("column") : updDir("row");
+  };
 
   const handleClick = id => {
     switch (id) {
@@ -50,7 +49,9 @@ export default function PlayerLinks() {
 
   useEffect(() => {
     function handleLayout() {
-      chkWindow()
+      
+      chkWindow();
+
     }
     window.addEventListener("resize", handleLayout);
     return () => window.removeEventListener("resize", handleLayout);
@@ -58,10 +59,10 @@ export default function PlayerLinks() {
 
   return (
     <Grid container alignItems="center" direction={direction} justify="space-evenly" spacing={3}>
-    <Grid item xs={5} component={Paper} className="gridItem">
+    <Grid item xs={10} md={5} component={Paper} className="gridItem">
       <img src={source} alt="loading..." className="player" />
     </Grid>
-    <Grid container item xs={5} alignItems="center" justify="center" component={Paper} className="gridItem">
+    <Grid container item xs={10} md={5} alignItems="center" justify="center" component={Paper} className="gridItem">
       <Grid item xs={2} lg={1}>
         <IconButton onClick={() => { handleClick("1") }} aria-label="card-gif" color="inherit">
           <TheatersIcon />
