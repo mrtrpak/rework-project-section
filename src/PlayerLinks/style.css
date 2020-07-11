@@ -13,7 +13,6 @@
 
 .linkText {
   letter-spacing: 3px;
-  text-transform: capitalize;
 }
 
 .toolsTitle {
@@ -26,7 +25,7 @@
   font-size: 16px;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (min-width: 960) and (max-width: 1100px) {
   #projectText, #toolsText {
     font-weight: 600;
     font-size: 12px;
