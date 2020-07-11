@@ -6,3 +6,18 @@
 .linkText, #projectText, #toolsText {
   text-align: center;
 }
+
+.linkText {
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+
+.toolsTitle {
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+
+#projectText, #toolsText {
+  font-weight: 650;
+  font-size: 16px;
+}

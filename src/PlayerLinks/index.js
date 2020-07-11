@@ -69,7 +69,7 @@ export default function PlayerLinks() {
       </Grid>
       <Grid item xs={8} lg={10}>
         <Link style={{ textDecoration: "none" }} color="primary" href="https://stormy-harbor-93453.herokuapp.com/">
-        <h3 className="linkText">Business Card Creator</h3>
+        <h3 className="linkText">BUSINESS CARD CREATOR</h3>
         </Link>
       </Grid> 
       <Grid item xs={2} lg={1}>
@@ -86,7 +86,7 @@ export default function PlayerLinks() {
       </Grid>
       <Grid item xs={8} lg={10}>
         <Link style={{ textDecoration: "none" }} color="primary" href="https://immense-hamlet-97451.herokuapp.com/">
-          <h3 className="linkText">Full-stack Retro Game</h3>
+          <h3 className="linkText">FULL-STACK GAME</h3>
         </Link>
       </Grid> 
       <Grid item xs={2} lg={1}>
@@ -103,7 +103,7 @@ export default function PlayerLinks() {
       </Grid>
       <Grid item xs={8} lg={10}>
         <Link style={{ textDecoration: "none" }} color="primary" href="https://still-ravine-53114.herokuapp.com/">
-          <h3 className="linkText">Budget Tracker</h3>
+          <h3 className="linkText">BUDGET TRACKER</h3>
         </Link>
       </Grid> 
       <Grid item xs={2} lg={1}>
@@ -113,22 +113,22 @@ export default function PlayerLinks() {
           </a>
         </IconButton>
       </Grid>
-      <Grid item xs={5}>
-        <h6 id="projectText">
+      <Grid item xs={6}>
+        <p id="projectText">
           Click film icon to view Gif
           <br></br>
           Click on text to go to the project
           <br></br>
           Click on Github icon to go to repo
-        </h6>
+        </p>
       </Grid>
-      <Grid container item justify="center" xs={5}>
-        <h4>
+      <Grid container item justify="center" xs={6}>
+        <h2 className="toolsTitle">
           {projTitle} Tools Used:
-        </h4>
-        <h3 id="toolsText">
+        </h2>
+        <p id="toolsText">
         axios, github-pages, material-ui, react, react-card-flip, react-parallax
-        </h3>
+        </p>
       </Grid>
     </Grid>
   </Grid>
