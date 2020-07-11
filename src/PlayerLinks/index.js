@@ -26,7 +26,7 @@ export default function PlayerLinks() {
       case "1":
         document.getElementById("projectText").innerHTML = "A free to use business card creator where a user can create cards from a selection of templates and print out multiple cards on a page.";
         document.getElementById("toolsText").innerHTML = "axios, ES6, CSS3, express, heroku, MySQL, passport, nodemon, react, sequelize";
-        updTitle("Business Card App");
+        updTitle("Card Creator");
         updSrc(businessGif);
         return;
       case "2":
@@ -38,7 +38,7 @@ export default function PlayerLinks() {
       case "3":
         document.getElementById("projectText").innerHTML = "App that tracks spending and income to get a clear view of money expenditure. It also works offline if there is no internet connection.";
         document.getElementById("toolsText").innerHTML = "CSS3, express, JS, mongoDB, mongoose, PWA";
-        updTitle("Budget Tracker App");
+        updTitle("Budget Tracker");
         updSrc(budgetGif);
         return;
       default:
@@ -58,7 +58,7 @@ export default function PlayerLinks() {
 
   return (
     <Grid container alignItems="center" direction={direction} justify="space-evenly" spacing={3}>
-    <Grid item xs={5} component={Paper}>
+    <Grid item xs={5} component={Paper} className="playGrid">
       <img src={source} alt="loading..." className="player" />
     </Grid>
     <Grid container item xs={5} alignItems="center" justify="center" component={Paper}>

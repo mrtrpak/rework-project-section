@@ -1,3 +1,8 @@
+.playGrid {
+  height: 300px;
+  width: 400px;
+}
+
 .player {
   height: 100%;
   width: 100%;
