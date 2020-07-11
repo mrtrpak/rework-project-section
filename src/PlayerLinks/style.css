@@ -7,7 +7,7 @@
   width: 100%;
 }
 
-.linkText, #projectText, #toolsText {
+.linkText, #projectText, #toolsText, .toolsTitle {
   text-align: center;
 }
 
