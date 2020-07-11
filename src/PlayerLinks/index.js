@@ -123,9 +123,9 @@ export default function PlayerLinks() {
         </p>
       </Grid>
       <Grid container item justify="center" xs={6}>
-        <h2 className="toolsTitle">
+        <p className="toolsTitle">
           {projTitle} Tools Used:
-        </h2>
+        </p>
         <p id="toolsText">
         axios, github-pages, material-ui, react, react-card-flip, react-parallax
         </p>

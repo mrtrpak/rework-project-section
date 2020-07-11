@@ -16,24 +16,25 @@
 }
 
 .toolsTitle {
-  margin: 0;
   border-bottom: 1px solid black;
+  font-size: 24px;
+  font-weight: 650;
 }
 
 #projectText, #toolsText {
-  font-weight: 650;
+  font-weight: 600;
   font-size: 16px;
 }
 
 @media only screen and (min-width: 960px) and (max-width: 1100px) {
 
   #projectText, #toolsText {
-    font-weight: 600;
     font-size: 12px;
   }
 
-  #toolsTitle {
+  .toolsTitle {
     font-size: 20px;
-  }
   
+  }
+
 }
