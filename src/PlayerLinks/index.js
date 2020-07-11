@@ -74,7 +74,7 @@ export default function PlayerLinks() {
       </Grid> 
       <Grid item xs={2} lg={1}>
         <IconButton aria-label="card-github" color="inherit">
-          <a href="https://github.com/mrtrpak/Futurum-est-nostrum">
+          <a href="https://github.com/mrtrpak/Futurum-est-nostrum" className="gitIcon">
             <GithubIcon />
           </a>
         </IconButton>
@@ -91,7 +91,7 @@ export default function PlayerLinks() {
       </Grid> 
       <Grid item xs={2} lg={1}>
         <IconButton aria-label="game-github" color="inherit">
-          <a href="https://github.com/mrtrpak/ProjectTwoTheGame">
+          <a href="https://github.com/mrtrpak/ProjectTwoTheGame" className="gitIcon">
             <GithubIcon />
           </a>
         </IconButton>
@@ -107,8 +107,8 @@ export default function PlayerLinks() {
         </Link>
       </Grid> 
       <Grid item xs={2} lg={1}>
-        <IconButton aria-label="budget-github" color="primary" className="color">
-          <a href="https://github.com/mrtrpak/Budget-Tracker">
+        <IconButton aria-label="budget-github" color="primary">
+          <a href="https://github.com/mrtrpak/Budget-Tracker" className="gitIcon">
             <GithubIcon />
           </a>
         </IconButton>

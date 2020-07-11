@@ -15,6 +15,10 @@
   letter-spacing: 3px;
 }
 
+.gitIcon {
+  color: black;
+}
+
 .toolsTitle {
   border-bottom: 1px solid black;
   font-size: 24px;
