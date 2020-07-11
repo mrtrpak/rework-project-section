@@ -1,6 +1,6 @@
 .player {
-  height: 300px;
-  width: 400px;
+  height: 100%;
+  width: 100%;
 }
 
 .linkText, #projectText, #toolsText {
