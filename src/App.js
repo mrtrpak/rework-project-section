@@ -18,16 +18,16 @@ export default function App() {
     let width = window.innerWidth;
 
     if (width < 601) {
-      setHt(600);
-      setStr(200);
+      setHt(650);
+      setStr(500);
       console.log(width, strength, height, "less");
     } else if (width > 1000) {
       setHt(750);
-      setStr(500);
+      setStr(300);
       console.log(width, strength, height, "more");
     } else {
       setHt(700);
-      setStr(300);
+      setStr(400);
       console.log(width, strength, height, "middle");
     };
   };
