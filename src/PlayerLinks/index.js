@@ -49,9 +49,7 @@ export default function PlayerLinks() {
 
   useEffect(() => {
     function handleLayout() {
-      
       chkWindow();
-
     }
     window.addEventListener("resize", handleLayout);
     return () => window.removeEventListener("resize", handleLayout);
@@ -117,11 +115,11 @@ export default function PlayerLinks() {
       </Grid>
       <Grid item xs={6}>
         <p id="projectText">
-          Click film icon to view Gif
+          - Click film icon to view Gif
           <br></br>
-          Project name goes to link
+          - Project name goes to link
           <br></br>
-          Github icon goes to repo
+          - Github icon goes to repo
         </p>
       </Grid>
       <Grid container item justify="center" xs={6}>

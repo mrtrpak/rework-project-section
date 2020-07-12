@@ -22,26 +22,34 @@
 
 .toolsTitle {
   border-bottom: 1px solid black;
-  font-size: 24px;
-  font-weight: 650;
   margin: 3px 0;
 }
 
-#projectText, #toolsText {
-  font-weight: 600;
-  font-size: 16px;
-}
-
-@media only screen and (min-width: 960px) and (max-width: 1100px) {
+@media only screen and (max-width: 600px) {
 
   #projectText, #toolsText {
     font-size: 12px;
+    font-weight: 550;
   }
 
   .toolsTitle {
-    font-size: 20px;
+    font-size: 14px;
+    font-weight: 550;
   }
 
+}
+
+@media only screen and (min-width: 601px) and (max-width: 959px) {
+
+  #projectText, #toolsText {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .toolsTitle {
+    font-size: 16px;
+    font-weight: 600;
+  }
 }
 
 @media only screen and (max-width: 959px) {
@@ -52,14 +60,30 @@
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 960px) and (max-width: 1100px) {
 
   #projectText, #toolsText {
-    font-weight: 550;
+    font-size: 16px;
+    font-weight: 650;
   }
 
   .toolsTitle {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 650;
   }
 
+}
+
+@media only screen and (min-width: 1101px) {
+
+  #projectText, #toolsText {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .toolsTitle {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
 }

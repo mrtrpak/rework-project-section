@@ -8,38 +8,35 @@ import "./App.css";
 
 export default function App() {
 
-  // const [handheld, updHandheld] = useState(false);
   const [height, setHt] = useState(650);
   const [strength, setStr] = useState(300);
 
-  // const handheldChk = (window.innerWidth > 800) ? updHandheld(false) : updHandheld(true);
-
   const updParallax = () => {
     let width = window.innerWidth;
+    console.log(width);
 
-    if (width < 601) {
-      setHt(650);
-      setStr(500);
-      console.log(width, strength, height, "less");
-    } else if (width > 1000) {
-      setHt(750);
-      setStr(300);
-      console.log(width, strength, height, "more");
-    } else {
+    if (width > 960) {
       setHt(700);
-      setStr(400);
-      console.log(width, strength, height, "middle");
+      setStr(500);
+    } else {
+      setHt(1000);
+      setStr(300);
     };
+
   };
 
   useEffect(() => {
-    updParallax();
-  });
+    function updPage() {
+      updParallax();
+    }
+    window.addEventListener("resize", updPage);
+    return () => window.removeEventListener("resize", updPage);
+  }, []);
   
 
   return (
-    <Parallax bgImage={paraImg} strength={strength} style={{ height: height }} >
-      <div className="playLinkGrid">
+    <Parallax bgImage={paraImg} strength={strength}  >
+      <div className="playLinkGrid" style={{ height: height }}>
         <PlayerLinks />
       </div>
     </Parallax>
