@@ -2,6 +2,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Table of Contents
 
+- [Available Scripts](#Available-Scripts)
+  - [yarn start](#'yarn-start')
+  - [yarn build](#'yarn-build')
+  - [yarn eject](#'yarn-eject')
+- [Summary](#Summary)
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -34,3 +40,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Summary
+
+The purpose of this repo is I wanted to get extra practice with React and also learn to use hooks in the process. I took my existing portfolio project which I used state in using the vanilla way in React. I wanted to learn how to use hooks to get the same results. Also I wanted to clean up my project section for a more appealing user experience.
