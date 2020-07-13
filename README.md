@@ -7,6 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - [yarn build](#'yarn-build')
   - [yarn eject](#'yarn-eject')
 - [Summary](#Summary)
+- [Photos](#Photos)
 
 ## Available Scripts
 
@@ -43,3 +44,14 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ## Summary
 
 The purpose of this repo is I wanted to get extra practice with React and also learn to use hooks in the process. I took my existing portfolio project which I used state in using the vanilla way in React. I wanted to learn how to use hooks to get the same results. Also I wanted to clean up my project section for a more appealing user experience.
+
+## Photos
+
+#### Version One
+![Original Version](/src/photos/original.png)
+
+#### Updated Version
+![Version 2](/src/photos/updated.png)
+
+#### Background Parallax Image
+![Background](/src/photos/prague.jpg)
