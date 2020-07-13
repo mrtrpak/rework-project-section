@@ -43,12 +43,12 @@
 
   #projectText, #toolsText {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 575;
   }
 
   .toolsTitle {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 575;
   }
 }
 
@@ -64,12 +64,12 @@
 
   #projectText, #toolsText {
     font-size: 16px;
-    font-weight: 650;
+    font-weight: 600;
   }
 
   .toolsTitle {
-    font-size: 20px;
-    font-weight: 650;
+    font-size: 18px;
+    font-weight: 600;
   }
 
 }
@@ -77,13 +77,13 @@
 @media only screen and (min-width: 1101px) {
 
   #projectText, #toolsText {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 650;
   }
 
   .toolsTitle {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 650;
   }
-  
+
 }
