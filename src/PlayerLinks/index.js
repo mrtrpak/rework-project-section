@@ -57,80 +57,80 @@ export default function PlayerLinks() {
 
   return (
     <Grid container alignItems="center" direction={direction} justify="space-evenly" spacing={3}>
-    <Grid item xs={10} md={5} component={Paper} className="gridItem">
-      <img src={source} alt="loading..." className="player" />
+      <Grid item xs={10} md={5} component={Paper} className="gridItem">
+        <img src={source} alt="loading..." className="player" />
+      </Grid>
+      <div className="padding"></div>
+      <Grid container item xs={10} md={5} alignItems="center" justify="center" component={Paper} className="gridItem">
+        <Grid item xs={2} lg={1}>
+          <IconButton onClick={() => { handleClick("1") }} aria-label="card-gif" color="inherit">
+            <TheatersIcon />
+          </IconButton>
+        </Grid>
+        <Grid item xs={8} lg={10}>
+          <Link style={{ textDecoration: "none" }} color="primary" href="https://stormy-harbor-93453.herokuapp.com/">
+          <h3 className="linkText">BUSINESS CARD CREATOR</h3>
+          </Link>
+        </Grid> 
+        <Grid item xs={2} lg={1}>
+          <IconButton aria-label="card-github" color="inherit">
+            <a href="https://github.com/mrtrpak/Futurum-est-nostrum" className="gitIcon">
+              <GithubIcon />
+            </a>
+          </IconButton>
+        </Grid>
+        <Grid item xs={2} lg={1}>
+          <IconButton onClick={() => { handleClick("2") }} aria-label="game-gif" color="inherit">
+            <TheatersIcon />
+          </IconButton>
+        </Grid>
+        <Grid item xs={8} lg={10}>
+          <Link style={{ textDecoration: "none" }} color="primary" href="https://immense-hamlet-97451.herokuapp.com/">
+            <h3 className="linkText">FULL-STACK GAME</h3>
+          </Link>
+        </Grid> 
+        <Grid item xs={2} lg={1}>
+          <IconButton aria-label="game-github" color="inherit">
+            <a href="https://github.com/mrtrpak/ProjectTwoTheGame" className="gitIcon">
+              <GithubIcon />
+            </a>
+          </IconButton>
+        </Grid>
+        <Grid item xs={2} lg={1}>
+          <IconButton onClick={() => { handleClick("3") }} aria-label="budget-gif" color="inherit">
+            <TheatersIcon />
+          </IconButton>
+        </Grid>
+        <Grid item xs={8} lg={10}>
+          <Link style={{ textDecoration: "none" }} color="primary" href="https://still-ravine-53114.herokuapp.com/">
+            <h3 className="linkText">BUDGET TRACKER</h3>
+          </Link>
+        </Grid> 
+        <Grid item xs={2} lg={1}>
+          <IconButton aria-label="budget-github" color="primary">
+            <a href="https://github.com/mrtrpak/Budget-Tracker" className="gitIcon">
+              <GithubIcon />
+            </a>
+          </IconButton>
+        </Grid>
+        <Grid item xs={6}>
+          <p id="projectText">
+            - Click film icon to view Gif
+            <br></br>
+            - Project name goes to link
+            <br></br>
+            - Github icon goes to repo
+          </p>
+        </Grid>
+        <Grid container item justify="center" xs={6}>
+          <p className="toolsTitle">
+            {projTitle} Tools Used:
+          </p>
+          <p id="toolsText">
+            axios, github-pages, material-ui, react, react-card-flip, react-parallax
+          </p>
+        </Grid>
+      </Grid>
     </Grid>
-    <div className="padding"></div>
-    <Grid container item xs={10} md={5} alignItems="center" justify="center" component={Paper} className="gridItem">
-      <Grid item xs={2} lg={1}>
-        <IconButton onClick={() => { handleClick("1") }} aria-label="card-gif" color="inherit">
-          <TheatersIcon />
-        </IconButton>
-      </Grid>
-      <Grid item xs={8} lg={10}>
-        <Link style={{ textDecoration: "none" }} color="primary" href="https://stormy-harbor-93453.herokuapp.com/">
-        <h3 className="linkText">BUSINESS CARD CREATOR</h3>
-        </Link>
-      </Grid> 
-      <Grid item xs={2} lg={1}>
-        <IconButton aria-label="card-github" color="inherit">
-          <a href="https://github.com/mrtrpak/Futurum-est-nostrum" className="gitIcon">
-            <GithubIcon />
-          </a>
-        </IconButton>
-      </Grid>
-      <Grid item xs={2} lg={1}>
-        <IconButton onClick={() => { handleClick("2") }} aria-label="game-gif" color="inherit">
-          <TheatersIcon />
-        </IconButton>
-      </Grid>
-      <Grid item xs={8} lg={10}>
-        <Link style={{ textDecoration: "none" }} color="primary" href="https://immense-hamlet-97451.herokuapp.com/">
-          <h3 className="linkText">FULL-STACK GAME</h3>
-        </Link>
-      </Grid> 
-      <Grid item xs={2} lg={1}>
-        <IconButton aria-label="game-github" color="inherit">
-          <a href="https://github.com/mrtrpak/ProjectTwoTheGame" className="gitIcon">
-            <GithubIcon />
-          </a>
-        </IconButton>
-      </Grid>
-      <Grid item xs={2} lg={1}>
-        <IconButton onClick={() => { handleClick("3") }} aria-label="budget-gif" color="inherit">
-          <TheatersIcon />
-        </IconButton>
-      </Grid>
-      <Grid item xs={8} lg={10}>
-        <Link style={{ textDecoration: "none" }} color="primary" href="https://still-ravine-53114.herokuapp.com/">
-          <h3 className="linkText">BUDGET TRACKER</h3>
-        </Link>
-      </Grid> 
-      <Grid item xs={2} lg={1}>
-        <IconButton aria-label="budget-github" color="primary">
-          <a href="https://github.com/mrtrpak/Budget-Tracker" className="gitIcon">
-            <GithubIcon />
-          </a>
-        </IconButton>
-      </Grid>
-      <Grid item xs={6}>
-        <p id="projectText">
-          - Click film icon to view Gif
-          <br></br>
-          - Project name goes to link
-          <br></br>
-          - Github icon goes to repo
-        </p>
-      </Grid>
-      <Grid container item justify="center" xs={6}>
-        <p className="toolsTitle">
-          {projTitle} Tools Used:
-        </p>
-        <p id="toolsText">
-        axios, github-pages, material-ui, react, react-card-flip, react-parallax
-        </p>
-      </Grid>
-    </Grid>
-  </Grid>
   );
 };
